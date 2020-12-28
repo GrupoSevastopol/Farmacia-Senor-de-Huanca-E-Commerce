@@ -1,0 +1,339 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.Master.cs" Inherits="Festacon.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <!-- //for-mobile-apps -->
+    <link href="~/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="~/css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- font-awesome icons -->
+    <link href="~/css/font-awesome.css" rel="stylesheet">
+    <!-- //font-awesome icons -->
+    <!-- js -->
+    <script src="~/js/jquery-1.11.1.min.js"></script>
+    <!-- //js -->
+    <link href='//fonts.googleapis.com/css?family=Raleway:400,100,100italic,200,200italic,300,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+    <!-- start-smoth-scrolling -->
+    <script type="text/javascript" src="~/js/move-top.js"></script>
+    <script type="text/javascript" src="~/js/easing.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $(".scroll").click(function (event) {
+                event.preventDefault();
+                $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
+            });
+        });
+    </script>
+
+
+</head>
+<body>
+
+	<div class="agileits_header">
+		<div class="container">
+			<div class="w3l_offers">
+				<p>Productos de calidad . <a href="products.aspx">Compra ahora</a></p>
+			</div>
+			<div class="agile-login">
+				<ul>
+					<li><a href="registered.aspx"> Crear cuenta </a></li>
+					<li><a href="login.aspx">Iniciar sesion</a></li>
+					<li><a href="contact.aspx">Ayuda</a></li>
+					
+				</ul>
+			</div>
+			<div class="product_list_header">  
+					<form action="#" method="post" class="last"> 
+						<input type="hidden" name="cmd" value="_cart">
+						<input type="hidden" name="display" value="1">
+						<button class="w3view-cart" type="submit" name="submit" value=""><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></button>
+					</form>  
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+
+	<div class="logo_products">
+		<div class="container">
+		<div class="w3ls_logo_products_left1">
+				<ul class="phone_email">
+					<li><i class="fa fa-phone" aria-hidden="true"></i>Compra online o llamanos : +51 951 357 465</li>
+					
+				</ul>
+			</div>
+			<div class="w3ls_logo_products_left">
+				<h1><a href="index.aspx">Farmacia Señor de Huanca</a></h1>
+			</div>
+		<div class="w3l_search">
+			<form action="#" method="post">
+				<input type="search" name="Search" placeholder="Busca un producto..." required="">
+				<button type="submit" class="btn btn-default search" aria-label="Left Align">
+					<i class="fa fa-search" aria-hidden="true"> </i>
+				</button>
+				<div class="clearfix"></div>
+			</form>
+		</div>
+			
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+
+    <div class="navigation-agileits">
+		<div class="container">
+			<nav class="navbar navbar-default">
+							<!-- Brand and toggle get grouped for better mobile display -->
+							<div class="navbar-header nav_2">
+								<button type="button" class="navbar-toggle collapsed navbar-toggle1" data-toggle="collapse" data-target="#bs-megadropdown-tabs">
+									<span class="sr-only">Toggle navigation</span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+							</div> 
+							<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
+								<ul class="nav navbar-nav">
+									<li class="active"><a href="index.aspx" class="act">Inicio</a></li>	
+									<!-- Mega Menu -->
+									<!--
+									<li class="dropdown">
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown">Groceries<b class="caret"></b></a>
+										<ul class="dropdown-menu multi-column columns-3">
+											<div class="row">
+												<div class="multi-gd-img">
+													<ul class="multi-column-dropdown">
+														<h6>All Groceries</h6>
+														<li><a href="groceries.aspx">Dals & Pulses</a></li>
+														<li><a href="groceries.aspx">Almonds</a></li>
+														<li><a href="groceries.aspx">Cashews</a></li>
+														<li><a href="groceries.aspx">Dry Fruit</a></li>
+														<li><a href="groceries.aspx"> Mukhwas </a></li>
+														<li><a href="groceries.aspx">Rice & Rice Products</a></li>
+													</ul>
+												</div>	
+												
+											</div>
+										</ul>
+									</li>
+									
+									<li class="dropdown">
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown">Household<b class="caret"></b></a>
+										<ul class="dropdown-menu multi-column columns-3">
+											<div class="row">
+												<div class="multi-gd-img">
+													<ul class="multi-column-dropdown">
+														<h6>All Household</h6>
+														<li><a href="household.aspx">Cookware</a></li>
+														<li><a href="household.aspx">Dust Pans</a></li>
+														<li><a href="household.aspx">Scrubbers</a></li>
+														<li><a href="household.aspx">Dust Cloth</a></li>
+														<li><a href="household.aspx"> Mops </a></li>
+														<li><a href="household.aspx">Kitchenware</a></li>
+													</ul>
+												</div>
+												
+												
+											</div>
+										</ul>
+									</li>
+									<li class="dropdown">
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown">Personal Care<b class="caret"></b></a>
+										<ul class="dropdown-menu multi-column columns-3">
+											<div class="row">
+												<div class="multi-gd-img">
+													<ul class="multi-column-dropdown">
+														<h6>Baby Care</h6>
+														<li><a href="personalcare.aspx">Baby Soap</a></li>
+														<li><a href="personalcare.aspx">Baby Care Accessories</a></li>
+														<li><a href="personalcare.aspx">Baby Oil & Shampoos</a></li>
+														<li><a href="personalcare.aspx">Baby Creams & Lotion</a></li>
+														<li><a href="personalcare.aspx"> Baby Powder</a></li>
+														<li><a href="personalcare.aspx">Diapers & Wipes</a></li>
+													</ul>
+												</div>
+												
+											</div>
+										</ul>
+									</li>
+									<li class="dropdown">
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown">Packaged Foods<b class="caret"></b></a>
+										<ul class="dropdown-menu multi-column columns-3">
+											<div class="row">
+												<div class="multi-gd-img">
+													<ul class="multi-column-dropdown">
+														<h6>All Accessories</h6>
+														<li><a href="packagedfoods.aspx">Baby Food</a></li>
+														<li><a href="packagedfoods.aspx">Dessert Items</a></li>
+														<li><a href="packagedfoods.aspx">Biscuits</a></li>
+														<li><a href="packagedfoods.aspx">Breakfast Cereals</a></li>
+														<li><a href="packagedfoods.aspx"> Canned Food </a></li>
+														<li><a href="packagedfoods.aspx">Chocolates & Sweets</a></li>
+													</ul>
+												</div>
+												
+											
+											</div>
+										</ul>
+									</li>
+									<li class="dropdown">
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown">Beverages<b class="caret"></b></a>
+										<ul class="dropdown-menu multi-column columns-3">
+											<div class="row">
+												<div class="multi-gd-img">
+													<ul class="multi-column-dropdown">
+														<h6>Tea & Coeffe</h6>
+														<li><a href="beverages.aspx">Green Tea</a></li>
+														<li><a href="beverages.aspx">Ground Coffee</a></li>
+														<li><a href="beverages.aspx">Herbal Tea</a></li>
+														<li><a href="beverages.aspx">Instant Coffee</a></li>
+														<li><a href="beverages.aspx"> Tea </a></li>
+														<li><a href="beverages.aspx">Tea Bags</a></li>
+													</ul>
+												</div>
+							
+											</div>
+										</ul>
+									</li>
+									
+									<li><a href="gourmet.aspx">Gourmet</a></li>
+									<li><a href="offers.aspx">Offers</a></li>-->
+									<li><a href="products.aspx">Productos</a></li>
+									<li><a href="About.aspx">Contactos</a></li>
+								</ul>
+							</div>
+							</nav>
+			</div>
+		</div>
+
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+			<hr />
+            <div class="footer">
+                <div class="container">
+                    <div class="w3_footer_grids">
+                        <div class="col-md-3 w3_footer_grid">
+                            <h3>Contactos</h3>
+
+                            <ul class="address">
+                                <li><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i>Belen <span>Cusco.</span></li>
+                                <li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i><a href="mailto:info@example.com">info@example.com</a></li>
+                                <li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>+51 951 357 465</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 w3_footer_grid">
+                            <h3>Informacion</h3>
+                            <ul class="info">
+                                <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="about.aspx">Acerca de nosotros</a></li>
+                                <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="contact.aspx">Contactanos</a></li>
+                                <!-- <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="short-codes.aspx">Short Codes</a></li>-->
+                                <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="faq.aspx">FAQ's</a></li>
+                                <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="products.aspx">Productos especiales</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 w3_footer_grid">
+                            <h3>Categorias</h3>
+                            <ul class="info">
+                                <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="catAnalgesico.aspx">Analgesicos</a></li>
+                                <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="products.aspx">Acidez</a></li>
+                                <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="catAntinflamatorio.aspx">Antinflamatorios</a></li>
+                                <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="catCongestion.aspx">Congestion nasal</a></li>
+                                <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="#">Problemas estomacales</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 w3_footer_grid">
+                            <h3>Perfil</h3>
+                            <ul class="info">
+                                <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="products.aspx">Tienda</a></li>
+                                <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="checkout.aspx">Mi carro</a></li>
+                                <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="login.aspx">Iniciar sesion</a></li>
+                                <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="registered.aspx">Crear cuenta</a></li>
+                            </ul>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+
+                <div class="footer-copy">
+
+                    <div class="container">
+                        <p>© 2020 Farmacia Señor de Huanca. Todos los derechos reservados | Diseñado por <a href="http://w3layouts.com/">Sevastopol</a></p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="footer-botm">
+                <div class="container">
+                    <div class="w3layouts-foot">
+                        <ul>
+                            <li><a href="#" class="w3_agile_facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                            <li><a href="#" class="agile_twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a href="#" class="w3_agile_dribble"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+                            <li><a href="#" class="w3_agile_vimeo"><i class="fa fa-vimeo" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="payment-w3ls">
+                        <img src="images/card.png" alt=" " class="img-responsive">
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <script src="~/js/bootstrap.min.js"></script>
+
+    <!-- top-header and slider -->
+    <!-- here stars scrolling icon -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            /*
+                var defaults = {
+                containerID: 'toTop', // fading element id
+                containerHoverID: 'toTopHover', // fading element hover id
+                scrollSpeed: 1200,
+                easingType: 'linear' 
+                };
+            */
+
+            $().UItoTop({ easingType: 'easeOutQuart' });
+
+        });
+    </script>
+    <!-- //here ends scrolling icon -->
+    <script src="~/js/minicart.min.js"></script>
+    <script>
+        // Mini Cart
+        paypal.minicart.render({
+            action: '#'
+        });
+
+        if (~window.location.search.indexOf('reset=true')) {
+            paypal.minicart.reset();
+        }
+    </script>
+    <!-- main slider-banner -->
+    <script src="~/js/skdslider.min.js"></script>
+    <link href="~/css/skdslider.css" rel="stylesheet">
+    <script type="text/javascript">
+        jQuery(document).ready(function () {
+            jQuery('#demo1').skdslider({ 'delay': 5000, 'animationSpeed': 2000, 'showNextPrev': true, 'showPlayButton': true, 'autoSlide': true, 'animationType': 'fading' });
+
+            jQuery('#responsive').change(function () {
+                $('#responsive_wrapper').width(jQuery(this).val());
+            });
+
+        });
+    </script>
+
+</body>
+</html>

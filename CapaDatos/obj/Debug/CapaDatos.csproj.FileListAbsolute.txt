@@ -1,0 +1,12 @@
+C:\Users\USER\Documents\Visual Studio 2019\Festacon\CapaDatos\bin\Debug\CapaDatos.dll
+C:\Users\USER\Documents\Visual Studio 2019\Festacon\CapaDatos\bin\Debug\CapaDatos.pdb
+C:\Users\USER\Documents\Visual Studio 2019\Festacon\CapaDatos\obj\Debug\CapaDatos.csprojAssemblyReference.cache
+C:\Users\USER\Documents\Visual Studio 2019\Festacon\CapaDatos\obj\Debug\CapaDatos.csproj.CoreCompileInputs.cache
+C:\Users\USER\Documents\Visual Studio 2019\Festacon\CapaDatos\obj\Debug\CapaDatos.dll
+C:\Users\USER\Documents\Visual Studio 2019\Festacon\CapaDatos\obj\Debug\CapaDatos.pdb
+C:\Users\Lenovo\Desktop\Semestre 6\desarrolllo2\trabajo 3\Festacon\CapaDatos\bin\Debug\CapaDatos.dll
+C:\Users\Lenovo\Desktop\Semestre 6\desarrolllo2\trabajo 3\Festacon\CapaDatos\bin\Debug\CapaDatos.pdb
+C:\Users\Lenovo\Desktop\Semestre 6\desarrolllo2\trabajo 3\Festacon\CapaDatos\obj\Debug\CapaDatos.csprojAssemblyReference.cache
+C:\Users\Lenovo\Desktop\Semestre 6\desarrolllo2\trabajo 3\Festacon\CapaDatos\obj\Debug\CapaDatos.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Desktop\Semestre 6\desarrolllo2\trabajo 3\Festacon\CapaDatos\obj\Debug\CapaDatos.dll
+C:\Users\Lenovo\Desktop\Semestre 6\desarrolllo2\trabajo 3\Festacon\CapaDatos\obj\Debug\CapaDatos.pdb
